@@ -22,6 +22,16 @@ url: "https://rootjanus.com" # the base hostname & protocol for your site, e.g. 
 twitter_username: anilcanblt
 github_username:  anilcanbulut
 
+# Minima temasında baslangic olarak yazar kısmı olmadıgi icin biz ekliyoruz.
+author: Anılcan Bulut
+
+title-logo: images/title-logo.png
+
+copyright: RootJanus
+
+linkedin_username: anılcan-bulut
+# youtube_username: 
+
 # Build settings
 markdown: kramdown
 
