@@ -17,7 +17,7 @@ title: RootJanus
 email: anilcanbulut9@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Siteme hoşgeldin
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "rootjanus" # the subpath of your site, e.g. /blog
 url: "https://rootjanus.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: anilcanblt
 github_username:  anilcanbulut
