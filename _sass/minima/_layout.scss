@@ -256,4 +256,15 @@
 .tileMe li {
   display: inline;
   float: left;
+  padding-right: 5px;
+  padding-bottom: 25px;
+}
+
+.card {
+  border-radius: 5px;
+  border: red;
+}
+
+.page-heading {
+  text-align: center;
 }

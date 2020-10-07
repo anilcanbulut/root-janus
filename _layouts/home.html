@@ -4,24 +4,18 @@ layout: default
 
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+    <h1 class="page-heading">{{ page.title }}</h1> 
   {%- endif -%}
   
 <br/>
   {{-content-}}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">{{ page.list_title | default: "Yazılar" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
 
-      <ul class="tileMe">
-        <li>item 1<li>
-        <li>item 2<li>
-        <li>item 3<li>
-      </ul>
 
-      <!--
+       <!--
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -35,11 +29,22 @@ layout: default
         {%- endif -%}
       </li>
       -->
-      
-      {%- endfor -%}
-    </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+      {% for post in site.posts %}
+          <ul class="tileMe">
+            <li>
+              <div class="card" style="width: 280px;">
+                <img src="./images/doge.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">{{ post.title | escape }}</h2>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="{{ post.url | relative_url }}" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            <li>
+          </ul>
+      {%- endfor -%}
+    
   {%- endif -%}
 
 </div>
