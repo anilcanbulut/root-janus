@@ -1,3 +1,3 @@
 # root-janus
-My personal website
+My personal website:
 https://rootjanus.com
